@@ -1,0 +1,34 @@
+{
+    "manifest_version": 3,
+    "name": "Integration Injector",
+    "version": "1.4",
+    "description": "Customises evaluagentCX API to reflect any integration.",
+    "permissions": ["activeTab", "scripting", "storage", "tabs"],
+    "host_permissions": ["<all_urls>"],
+    "icons": {
+      "16": "images/favicon.png",
+      "48": "images/favicon48.png",
+      "128": "images/favicon128.png"
+    },
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+        "16": "images/favicon.png",
+        "48": "images/favicon48.png",
+        "128": "images/favicon128.png"
+      }
+    },
+    "background": {
+      "service_worker": "background.js"
+    },
+    "content_security_policy": {
+      "extension_pages": "script-src 'self'; object-src 'self';"
+    },
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["content.js"]
+      }
+    ]
+  }
+  

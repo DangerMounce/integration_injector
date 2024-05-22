@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>EvaluAgent Enhancer</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            width: 400px;
+        }
+
+        .container {
+            max-width: 100%;
+        }
+
+        h5 {
+            font-size: 1.25rem;
+            margin-bottom: 20px;
+        }
+
+        select {
+            width: 100%;
+            padding: 5px;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <img class="mb-4" width="45%" src="https://app.evaluagent.com/images/cx_logo_black_blue.png"
+            alt="evaluagent logo">
+        <select id="image-selector" class="form-control">
+            <option value="" disabled selected>Select an integration</option>
+            <option value="https://assets.app.evaluagent.com/integration-logos/flat/Five9.png">Five9</option>
+            <option value="https://assets.app.evaluagent.com/integration-logos/flat/Aircall.png">aircall</option>
+            <option value="https://assets.app.evaluagent.com/integration-logos/flat/Zendesk.png">Zendesk</option>
+            <option value="https://assets.app.evaluagent.com/integration-logos/flat/Salesforce.png">Salesforce</option>
+            <option value="https://assets.app.evaluagent.com/integration-logos/flat/Freshdesk.png">Freshdesk</option>
+            <option value="https://assets.app.evaluagent.com/integration-logos/flat/Freshcaller.png">Freshcaller
+            </option>
+            <option value="https://assets.app.evaluagent.com/integration-logos/flat/Intercom.png">Intercom</option>
+            <option value="https://assets.app.evaluagent.com/integration-logos/flat/Redbox.png">Redbox</option>
+            <option value="https://assets.app.evaluagent.com/integration-logos/flat/Amazon%20Connect.png">Amazon Connect
+            </option>
+            <option value="https://assets.app.evaluagent.com/integration-logos/flat/Genesys%20Cloud.png">Genesys Cloud
+            </option>
+            <option value="https://assets.app.evaluagent.com/integration-logos/flat/Puzzel%20Chat.png">Puzzel Chat
+            </option>
+            <option value="https://assets.app.evaluagent.com/integration-logos/flat/Puzzel%20Call.png">Puzzel Call
+            </option>
+            <option value="https://assets.app.evaluagent.com/integration-logos/flat/Freshservice.png">Freshservice
+            </option>
+            <option value="https://assets.app.evaluagent.com/integration-logos/flat/RingCentral.png">RingCentral
+            </option>
+        </select>
+        <button id="replace-images" class="btn btn-primary">Apply Integration</button>
+        <button id="stop-replacing" class="btn btn-danger" style="display: none;">Stop Demo</button>
+    </div>
+
+    <script src="popup.js"></script>
+</body>
+
+</html>
